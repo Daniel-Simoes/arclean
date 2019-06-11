@@ -49,6 +49,10 @@ Table of Content:
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+p {
+	text-align: justify;
+}
+
 ul {
   list-style: none;
   margin: 0px;
@@ -353,7 +357,7 @@ iframe {
 }
 
 .main_header_area.navbar_fixed .main_menu_area .navbar.navbar-default .nav.navbar-nav.navbar-right li.active a {
-  color: dodgerblue;
+  color: #048BCC;
 }
 
 .header_top_area {
@@ -427,7 +431,7 @@ iframe {
 }
 
 .header_social li:hover a {
-  color: dodgerblue;
+  color: #048BCC;
 }
 
 .main_menu_area {
@@ -436,7 +440,7 @@ iframe {
 }
 
 .main_menu_area .navbar.navbar-default {
-  background: transparent;
+  background: #fff;
   margin-bottom: 0px;
   border: none;
 }
@@ -471,7 +475,7 @@ iframe {
   -webkit-transition: all 400ms linear 0s;
   -o-transition: all 400ms linear 0s;
   transition: all 400ms linear 0s;
-  background: transparent;
+  background: ;
 }
 
 .main_menu_area .navbar.navbar-default .nav.navbar-nav.navbar-right li.icon_search {
@@ -484,7 +488,7 @@ iframe {
 
 .main_menu_area .navbar.navbar-default .nav.navbar-nav.navbar-right li.icon_search a:before {
   content: "02";
-  background: black;
+  background: #048BCC;
   height: 20px;
   width: 20px;
   border-radius: 50%;
@@ -502,7 +506,7 @@ iframe {
 }
 
 .main_menu_area .navbar.navbar-default .nav.navbar-nav.navbar-right li:hover a, .main_menu_area .navbar.navbar-default .nav.navbar-nav.navbar-right li.active a {
-  color: black;
+  color: #048BCC;
 }
 
 .main_menu_area .navbar.navbar-default .nav.navbar-nav.navbar-right li.submenu {
@@ -572,7 +576,7 @@ iframe {
 }
 
 .main_menu_area .navbar.navbar-default .nav.navbar-nav.navbar-right li.submenu .dropdown-menu li:hover a {
-  background: blue;
+  background: #048BCC;
   color: #fff;
 }
 
@@ -585,7 +589,7 @@ iframe {
 }
 
 .transparent_menu .main_menu_area {
-  background: transparent;
+  background: ;
 }
 
 .transparent_menu .main_menu_area .navbar.navbar-default {
@@ -594,11 +598,11 @@ iframe {
 }
 
 .transparent_menu .main_menu_area .navbar.navbar-default .nav.navbar-nav.navbar-right li a {
-  color: #fff;
+  color: black;
 }
 
 .transparent_menu .main_menu_area .navbar.navbar-default .nav.navbar-nav.navbar-right li:hover > a, .transparent_menu .main_menu_area .navbar.navbar-default .nav.navbar-nav.navbar-right li.active > a {
-  color: dodgerblue;
+  color: #048BCC;
 }
 
 .transparent_menu + section, .transparent_menu + div, .transparent_menu + .row {
@@ -636,7 +640,7 @@ iframe {
 }
 
 .main_slider_area .rev_slider .tp-revslider-mainul li .slider_text_box .secand_text {
-  color: dodgerblue;
+  color: #048BCC;
   text-transform: uppercase;
   font-weight: bold !important;
   font-family: "PT Sans", sans-serif;
@@ -944,7 +948,7 @@ iframe {
 .get_bg_btn {
   display: inline-block;
   padding: 0px 35px;
-  border: 2px solid dodgerblue;
+  border: 2px solid #fff;
   line-height: 50px;
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
@@ -1031,9 +1035,28 @@ iframe {
 }
 
 .slider_btn {
+  background-color: #1e2621;
   display: inline-block;
   padding: 0px 36px;
-  border: 2px solid grey;
+  border: 2px solid #1e2621;
+  line-height: 50px;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  -webkit-transition: color .5s;
+  -o-transition: color .5s;
+  transition: color .5s;
+}
+
+.slider_btn1 {
+  display: inline-block;
+  padding: 0px 36px;
+  border: 2px solid #fff;
   line-height: 50px;
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
@@ -1066,11 +1089,37 @@ iframe {
   transition: all .7s;
 }
 
+.slider_btn1:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #fff;
+  height: 250px;
+  width: 320px;
+  border-radius: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -50px;
+  -webkit-transition: all .7s;
+  -o-transition: all .7s;
+  transition: all .7s;
+}
+
 .slider_btn:hover {
-  color: grey;
+  color: #fff;
+}
+
+.slider_btn1:hover {
+  color: #fff;
 }
 
 .slider_btn:hover:before {
+  bottom: 100%;
+}
+
+.slider_btn1:hover:before {
   bottom: 100%;
 }
 
@@ -1079,7 +1128,7 @@ iframe {
   box-shadow: none;
   background: #fff;
   border-radius: 0px;
-  border: 1px solid dodgerblue;
+  border: 1px solid #048BCC;
   color: #fff;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
@@ -1162,7 +1211,7 @@ iframe {
 /* Address area css
 ============================================================================================ */
 .address_area {
-  background: dodgerblue;
+  background: #fff;
   padding: 32px 0px;
 }
 
@@ -1194,7 +1243,7 @@ iframe {
 /* Subscribe area css
 ============================================================================================ */
 .subscribe_area {
-  background: dodgerblue;
+  background: #1e2126;
   overflow: hidden;
   padding: 40px 0px;
 }
@@ -1203,7 +1252,7 @@ iframe {
   font-size: 22px;
   font-weight: normal;
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #fff;
   padding-top: 12px;
 }
 
@@ -1316,7 +1365,7 @@ iframe {
 
 .pre_construction_item:before {
   content: "";
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.8);
   position: absolute;
   left: 0px;
   top: 0px;
@@ -1346,7 +1395,7 @@ iframe {
   font-size: 25px;
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
-  color: dodgerblue;
+  color: #1e2126;
 }
 
 .pre_hover p {
@@ -1363,7 +1412,7 @@ iframe {
 }
 
 .pre_hover .slider_btn:hover {
-  color: dodgerblue;
+  color: #fff;
 }
 
 .pre_construction_right {
@@ -1562,7 +1611,7 @@ iframe {
 }
 
 .our_service_area .left_service .left_service_inner .service_item .service_item_inner:hover {
-  background: dodgerblue;
+  background: grey;
 }
 
 .our_service_area .left_service .left_service_inner .service_item .service_item_inner:hover .service_icon img {
@@ -1639,7 +1688,7 @@ iframe {
 }
 
 .b_companu_l_text .slider_btn:hover {
-  color: green;
+  color: #fff;
 }
 
 /* End Best Company area css
@@ -2106,7 +2155,7 @@ iframe {
   height: 0;
   border-style: solid;
   border-width: 205px 0 0 47px;
-  border-color: transparent transparent transparent dodgerblue;
+  border-color: transparent transparent transparent #048BCC;
 }
 
 .testimonials_slider .item .testi_left i {
@@ -2296,7 +2345,7 @@ iframe {
 }
 
 .latest_news_item .news_image .l_date {
-  background: dodgerblue;
+  background: #1e2126;
   text-align: center;
   color: #fff;
   position: absolute;
@@ -2339,7 +2388,7 @@ iframe {
 }
 
 .latest_news_item .news_content h4:hover {
-  color: dodgerblue;
+  color: #048BCC;
 }
 
 .latest_news_item .news_content h6 {
@@ -2359,7 +2408,7 @@ iframe {
 }
 
 .latest_news_item .news_content h6 a:hover {
-  color: dodgerblue;
+  color: #048BCC;
 }
 
 .latest_news_item .news_content p {
@@ -2381,7 +2430,7 @@ iframe {
 }
 
 .latest_news_item .news_content .pull-left a:hover {
-  color: dodgerblue;
+  color: #048BCC;
 }
 
 .latest_news_item .news_content .pull-right a {
@@ -2399,7 +2448,7 @@ iframe {
 }
 
 .latest_news_item .news_content .pull-right a:hover {
-  color: dodgerblue;
+  color: #048BCC;
 }
 
 .latest_news_item:hover .news_image img {
@@ -2436,7 +2485,7 @@ iframe {
 }
 
 .clients_slider .item:hover {
-  border-color: dodgerblue;
+  border-color: #048BCC;
 }
 
 /* End Clients area css
@@ -2469,7 +2518,7 @@ iframe {
 .project_summery ul {
   padding-left: 26px;
   position: relative;
-  border-left: 3px solid dodgerblue;
+  border-left: 3px solid #048BCC;
 }
 
 .project_summery ul li {
@@ -2518,7 +2567,7 @@ iframe {
 }
 
 .project_quote .quote_inner a {
-  color: dodgerblue;
+  color: #048BCC;
 }
 
 .project_collaps {
@@ -2554,7 +2603,7 @@ iframe {
   float: right;
   font-size: 20px;
   display: inline-block;
-  color: dodgerblue;
+  color: #048BCC;
 }
 
 .project_collaps .panel-default .panel-heading .panel-title a i + i {
@@ -2686,7 +2735,7 @@ iframe {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   height: 1px;
-  background: dodgerblue;
+  background: #048BCC;
   position: absolute;
 }
 
@@ -2723,7 +2772,7 @@ iframe {
 .r_social_widget ul li a {
   height: 34px;
   width: 34px;
-  background: dodgerblue;
+  background: #048BCC;
   text-align: center;
   line-height: 34px;
   color: #fff;
@@ -2752,7 +2801,7 @@ iframe {
 .r_twitter_widget .tweets_feed ul li .tw_content .tweet_text a {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
-  color: dodgerblue;
+  color: #048BCC;
 }
 
 .r_twitter_widget .tweets_feed ul li .tw_content .tweet_date {
@@ -2762,7 +2811,7 @@ iframe {
 }
 
 .r_twitter_widget .tweets_feed ul li .tw_content .footer .tweet_time {
-  color: dodgerblue;
+  color: #048BCC;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
 }
@@ -2776,7 +2825,7 @@ iframe {
 }
 
 .blog_details_img .b_date {
-  background: dodgerblue;
+  background: #1e2126;
   text-align: center;
   display: inline-block;
   padding: 15px;
@@ -2787,7 +2836,7 @@ iframe {
 
 .blog_details_img .b_date h3 {
   font-size: 30px;
-  color: #444444;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   padding-bottom: 6px;
@@ -2796,7 +2845,7 @@ iframe {
 .blog_details_img .b_date h5 {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #fff;
   text-transform: uppercase;
 }
 
@@ -2813,7 +2862,7 @@ iframe {
 }
 
 .blog_d_text h6 a {
-  color: dodgerblue;
+  color: #048BCC;
 }
 
 .blog_d_text h6 span {
@@ -2852,7 +2901,7 @@ iframe {
 .blog_d_text .quote_text p i {
   padding-right: 7px;
   font-size: 22px;
-  color: dodgerblue;
+  color: #048BCC;
 }
 
 .image_text {
@@ -2895,7 +2944,7 @@ iframe {
 }
 
 .image_text .img_list li a i {
-  color: dodgerblue;
+  color: #048BCC;
   position: absolute;
   left: -8px;
   top: 50%;
@@ -2939,7 +2988,7 @@ iframe {
 }
 
 .image_text .img_tages li a:hover {
-  color: dodgerblue;
+  color: #048BCC;
 }
 
 .like_post {
@@ -3019,7 +3068,7 @@ iframe {
 }
 
 .comment_list_inner .media .cm_reply {
-  color: dodgerblue;
+  color: #048BCC;
   text-transform: uppercase;
   margin-top: 15px;
   display: block;
@@ -3207,7 +3256,7 @@ iframe {
 }
 
 .banner_inner_text ul li:hover a, .banner_inner_text ul li.active a {
-  color: dodgerblue;
+  color: #048BCC;
 }
 
 /* Clients area css
@@ -3530,7 +3579,7 @@ iframe {
 }
 
 .f_content_item:hover h4 {
-  color: dodgerblue;
+  color: #048BCC;
 }
 
 /* End Feature Content area css
@@ -3733,8 +3782,8 @@ iframe {
 }
 
 .our_latest_slider .owl-prev:hover, .our_latest_slider .owl-next:hover {
-  background: dodgerblue;
-  border-color: dodgerblue;
+  background: #048BCC;
+  border-color: #048BCC;
   color: #fff;
 }
 
@@ -3775,7 +3824,7 @@ iframe {
   text-transform: uppercase;
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
-  color: dodgerblue;
+  color: #fff;
 }
 
 .about_widget p {
@@ -3852,7 +3901,7 @@ iframe {
 
 .give_us_widget h5 {
   font-size: 24px;
-  color: dodgerblue;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -3860,7 +3909,7 @@ iframe {
   font-size: 32px;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  color: dodgerblue;
+  color: lightgrey;
   padding: 23px 0px 12px 0px;
 }
 
@@ -3881,7 +3930,7 @@ iframe {
 }
 
 .footer_copy_right h4 i {
-  color: dodgerblue;
+  color: #048BCC;
 }
 
 .footer_copy_right h4 a {
@@ -3904,7 +3953,7 @@ iframe {
 }
 
 .footer_menu li:hover a, .footer_menu li.active a {
-  color: dodgerblue;
+  color: #048BCC;
 }
 
 /* End Footer area css
